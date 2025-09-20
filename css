@@ -1,7 +1,0 @@
-body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background: #f7f7f7; }
-h1 { color: green; }
-#saudi-map { margin: 20px auto; display: block; cursor: pointer; }
-#card { background: #fff; padding: 20px; border-radius: 10px; display: inline-block; margin-top: 20px; }
-.hidden { display: none; }
-button { padding: 10px 20px; background: green; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
-button:hover { background: darkgreen; }
