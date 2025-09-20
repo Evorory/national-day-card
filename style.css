@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top, #fefefe, #87ceeb);
+  margin: 0;
+  padding: 0;
+  direction: rtl; /* لتكون النصوص العربية من اليمين لليسار */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #006c35;
+  color: white;
+  font-size: 1.2em;
+}
+
+#map {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.landmark {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.landmark:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #006c35);
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffffee;
+  border: 3px solid #006c35;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+#close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #006c35;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

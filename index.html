@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudi Landmarks Interactive Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- الصوت المستمر -->
+  <audio id="bg-sound" src="assets/sounds/background.mp3" autoplay loop></audio>
+
+  <!-- عنوان مع تعليمات -->
+  <header>
+    <h1>اضغط على المنطقة أو المعلم الذي تريد قراءة المعلومة عنه</h1>
+  </header>
+
+  <!-- خريطة المعالم -->
+  <main>
+    <div id="map">
+      <img src="assets/images/alula.svg.JPG" class="landmark" data-name="العلا" data-info="العلا هي مدينة أثرية شمال غرب السعودية، تضم آثارا ونقوشا تاريخية رائعة وتعد مقصد سياحي مميز.">
+      <img src="assets/images/riyadh.svg.JPG" class="landmark" data-name="الرياض" data-info="الرياض عاصمة المملكة وأكبر مدينة، تجمع بين الحداثة والتراث، وتضم أهم المعالم الإدارية والثقافية.">
+      <img src="assets/images/makkah.svg.JPG" class="landmark" data-name="مكة المكرمة" data-info="مكة المكرمة أقدس مدينة في الإسلام، تحتضن الكعبة المشرفة وتجذب الملايين من الحجاج سنويًا.">
+      <img src="assets/images/madinah.svg.JPG" class="landmark" data-name="المدينة المنورة" data-info="المدينة المنورة ثاني أقدس مدينة في الإسلام، تحتضن المسجد النبوي الشريف وقبور الصحابة.">
+      <img src="assets/images/najd.svg.JPG" class="landmark" data-name="نجد" data-info="نجد منطقة مركزية في السعودية، مشهورة بصحرائها الواسعة وتراثها البدوي العريق.">
+      <img src="assets/images/eastern.svg.JPG" class="landmark" data-name="المنطقة الشرقية" data-info="المنطقة الشرقية تقع على الخليج العربي، وتشتهر بالمدن الصناعية والموانئ الكبيرة مثل الجبيل.">
+      <img src="assets/images/northern.svg.JPG" class="landmark" data-name="المنطقة الشمالية" data-info="المنطقة الشمالية تتميز بصحرائها الشاسعة وحدودها مع الأردن والعراق، وتضم بعض المواقع التاريخية.">
+      <img src="assets/images/western.svg.JPG" class="landmark" data-name="المنطقة الغربية" data-info="المنطقة الغربية تضم المدن الساحلية مثل جدة وميناءها التجاري الكبير، وتشتهر بسياحة البحر الأحمر.">
+      <img src="assets/images/abha.svg.JPG" class="landmark" data-name="أبها" data-info="أبها مدينة جبلية في جنوب غرب السعودية، مشهورة بطبيعتها الخضراء وطبيعتها المعتدلة في الصيف.">
+    </div>
+
+    <!-- نافذة المعلومات المنبثقة -->
+    <div id="popup" class="hidden">
+      <span id="close">&times;</span>
+      <h2 id="popup-title"></h2>
+      <p id="popup-text"></p>
+    </div>
+  </main>
+
+  <!-- توقيع المصمم -->
+  <footer>
+    Designed by Rana Alboqami
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
